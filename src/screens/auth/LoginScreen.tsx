@@ -112,7 +112,7 @@ const LoginScreen = () => {
           <Image
             // eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-require-imports
             source={require('@/assets/images/logo.png')}
-            style={tailwind.style('w-10 h-10')}
+            style={tailwind.style('w-50 h-10')}
             resizeMode="contain"
           />
           <View style={tailwind.style('pt-6 gap-4')}>
@@ -222,13 +222,13 @@ const LoginScreen = () => {
             handlePress={handleSubmit(onSubmit)}
           />
 
-          <Pressable
+          {/* <Pressable
             style={tailwind.style('flex-row justify-center items-center mt-6')}
             onPress={openConfigInstallationURL}>
             <Animated.Text style={tailwind.style('text-sm text-gray-900')}>
               {i18n.t('LOGIN.CHANGE_URL')}
             </Animated.Text>
-          </Pressable>
+          </Pressable> */}
           <Pressable
             style={tailwind.style('flex-row justify-center items-center mt-4')}
             onPress={() => languagesModalSheetRef.current?.present()}>

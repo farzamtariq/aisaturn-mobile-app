@@ -4,6 +4,7 @@ import { Alert, BackHandler } from 'react-native';
 import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from './store';
 import { AppNavigator } from '@/navigation';
+import ErrorBoundary from '@/components/ErrorBoundary';
 
 import i18n from '@/i18n';
 
@@ -32,11 +33,13 @@ const Chatwoot = () => {
   };
 
   return (
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <AppNavigator />
-      </PersistGate>
-    </Provider>
+    <ErrorBoundary>
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <AppNavigator />
+        </PersistGate>
+      </Provider>
+    </ErrorBoundary>
   );
 };
 

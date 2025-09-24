@@ -197,7 +197,7 @@ importers:
         specifier: ^5.2.4
         version: 5.4.0(react-native@0.76.9(@babel/core@7.27.1)(@babel/preset-env@7.27.1(@babel/core@7.27.1))(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
       react-native-reanimated:
-        specifier: ^3.16.7
+        specifier: 3.16.7
         version: 3.16.7(@babel/core@7.27.1)(react-native@0.76.9(@babel/core@7.27.1)(@babel/preset-env@7.27.1(@babel/core@7.27.1))(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
       react-native-safe-area-context:
         specifier: ^4.12.0
@@ -5540,6 +5540,7 @@ packages:
 
   react-native-audio-recorder-player@3.6.12:
     resolution: {integrity: sha512-/pnZxPA2jvQ9K7oDtrjcAjc/hn124swi451Q/i1Z6yesDVqupE38moNm12HgY1IVupdUCjeiZVqPoShcE0N8mw==}
+    deprecated: This package has been deprecated. Please use react-native-nitro-sound instead.
     peerDependencies:
       react: '*'
       react-native: '*'
@@ -9366,14 +9367,14 @@ snapshots:
       '@types/uuid': 9.0.8
       dequal: 2.0.3
       polished: 4.3.1
-      storybook: 8.6.12(prettier@2.8.8)
+      storybook: 8.6.12(prettier@3.5.3)
       uuid: 9.0.1
 
   '@storybook/addon-controls@8.6.12(storybook@8.6.12(prettier@3.5.3))':
     dependencies:
       '@storybook/global': 5.0.0
       dequal: 2.0.3
-      storybook: 8.6.12(prettier@2.8.8)
+      storybook: 8.6.12(prettier@3.5.3)
       ts-dedent: 2.2.0
 
   '@storybook/addon-ondevice-actions@8.6.2(prettier@3.5.3)(react-native@0.76.9(@babel/core@7.27.1)(@babel/preset-env@7.27.1(@babel/core@7.27.1))(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)(storybook@8.6.12(prettier@3.5.3))':
@@ -9422,7 +9423,7 @@ snapshots:
 
   '@storybook/components@8.6.12(storybook@8.6.12(prettier@3.5.3))':
     dependencies:
-      storybook: 8.6.12(prettier@2.8.8)
+      storybook: 8.6.12(prettier@3.5.3)
 
   '@storybook/core@8.6.12(prettier@2.8.8)(storybook@8.6.12(prettier@3.5.3))':
     dependencies:
@@ -9474,17 +9475,17 @@ snapshots:
 
   '@storybook/manager-api@8.6.12(storybook@8.6.12(prettier@3.5.3))':
     dependencies:
-      storybook: 8.6.12(prettier@2.8.8)
+      storybook: 8.6.12(prettier@3.5.3)
 
   '@storybook/preview-api@8.6.12(storybook@8.6.12(prettier@3.5.3))':
     dependencies:
-      storybook: 8.6.12(prettier@2.8.8)
+      storybook: 8.6.12(prettier@3.5.3)
 
   '@storybook/react-dom-shim@8.6.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.6.12(prettier@3.5.3))':
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      storybook: 8.6.12(prettier@2.8.8)
+      storybook: 8.6.12(prettier@3.5.3)
 
   '@storybook/react-native-theming@8.6.2(react-native@0.76.9(@babel/core@7.27.1)(@babel/preset-env@7.27.1(@babel/core@7.27.1))(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -9518,7 +9519,7 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@storybook/react-native-ui@8.6.2(71044eb89f6570487c2159728b32b90c)':
+  '@storybook/react-native-ui@8.6.2(499fec46cf72bedf67b842756d844ccf)':
     dependencies:
       '@gorhom/bottom-sheet': 5.1.4(@types/react@18.3.20)(react-native-gesture-handler@2.20.2(react-native@0.76.9(@babel/core@7.27.1)(@babel/preset-env@7.27.1(@babel/core@7.27.1))(@types/react@18.3.20)(react@18.3.1))(react@18.3.1))(react-native-reanimated@3.16.7(@babel/core@7.27.1)(react-native@0.76.9(@babel/core@7.27.1)(@babel/preset-env@7.27.1(@babel/core@7.27.1))(@types/react@18.3.20)(react@18.3.1))(react@18.3.1))(react-native@0.76.9(@babel/core@7.27.1)(@babel/preset-env@7.27.1(@babel/core@7.27.1))(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
       '@storybook/core': 8.6.12(prettier@2.8.8)(storybook@8.6.12(prettier@3.5.3))
@@ -9552,7 +9553,7 @@ snapshots:
       '@storybook/global': 5.0.0
       '@storybook/react': 8.6.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.6.12(prettier@3.5.3))(typescript@5.8.3)
       '@storybook/react-native-theming': 8.6.2(react-native@0.76.9(@babel/core@7.27.1)(@babel/preset-env@7.27.1(@babel/core@7.27.1))(@types/react@18.3.20)(react@18.3.1))(react@18.3.1)
-      '@storybook/react-native-ui': 8.6.2(71044eb89f6570487c2159728b32b90c)
+      '@storybook/react-native-ui': 8.6.2(499fec46cf72bedf67b842756d844ccf)
       commander: 8.3.0
       dedent: 1.6.0
       deepmerge: 4.3.1
@@ -9588,13 +9589,13 @@ snapshots:
       '@storybook/theming': 8.6.12(storybook@8.6.12(prettier@3.5.3))
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      storybook: 8.6.12(prettier@2.8.8)
+      storybook: 8.6.12(prettier@3.5.3)
     optionalDependencies:
       typescript: 5.8.3
 
   '@storybook/theming@8.6.12(storybook@8.6.12(prettier@3.5.3))':
     dependencies:
-      storybook: 8.6.12(prettier@2.8.8)
+      storybook: 8.6.12(prettier@3.5.3)
 
   '@tybys/wasm-util@0.9.0':
     dependencies:
@@ -13847,6 +13848,16 @@ snapshots:
       '@storybook/core': 8.6.12(prettier@2.8.8)(storybook@8.6.12(prettier@3.5.3))
     optionalDependencies:
       prettier: 2.8.8
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+
+  storybook@8.6.12(prettier@3.5.3):
+    dependencies:
+      '@storybook/core': 8.6.12(prettier@3.5.3)(storybook@8.6.12(prettier@3.5.3))
+    optionalDependencies:
+      prettier: 3.5.3
     transitivePeerDependencies:
       - bufferutil
       - supports-color

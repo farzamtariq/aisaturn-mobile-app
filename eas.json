@@ -6,10 +6,25 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_IOS_GOOGLE_SERVICES_FILE": "./firebase/GoogleService-Info.plist",
+        "EXPO_PUBLIC_ANDROID_GOOGLE_SERVICES_FILE": "./firebase/google-services.json"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_IOS_GOOGLE_SERVICES_FILE": "./firebase/GoogleService-Info.plist",
+        "EXPO_PUBLIC_ANDROID_GOOGLE_SERVICES_FILE": "./firebase/google-services.json"
+      }
     },
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_IOS_GOOGLE_SERVICES_FILE": "./firebase/GoogleService-Info.plist",
+        "EXPO_PUBLIC_ANDROID_GOOGLE_SERVICES_FILE": "./firebase/google-services.json"
+      }
     }
   },
   "submit": {
