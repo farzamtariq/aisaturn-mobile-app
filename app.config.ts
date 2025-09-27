@@ -94,6 +94,3 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     androidNavigationBar: { backgroundColor: '#000000' },
   };
 };
-
-
-git push origin develop
