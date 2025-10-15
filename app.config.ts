@@ -16,7 +16,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       enableFullScreenImage_legacy: true,
     },
     ios: {
-      supportsTablet: true,
+      supportsTablet: false,
       bundleIdentifier: 'com.aisaturn.app',
       infoPlist: {
         NSCameraUsageDescription:
