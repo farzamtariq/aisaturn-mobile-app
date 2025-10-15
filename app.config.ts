@@ -20,10 +20,10 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       bundleIdentifier: 'com.aisaturn.app',
       infoPlist: {
         NSCameraUsageDescription:
-          'This app requires access to the camera to upload images and videos.',
+          'AiSaturn, sohbetlerde kullanıcıların fotoğraf çekip paylaşabilmesi için kamera erişimi ister.',
         NSPhotoLibraryUsageDescription:
-          'This app requires access to the photo library to upload images.',
-        NSMicrophoneUsageDescription: 'This app requires access to the microphone to record audio.',
+          'AiSaturn, sohbetlerde kullanıcıların fotoğraf paylaşabilmesi için fotoğraf galerisi erişimi ister.',
+        NSMicrophoneUsageDescription: 'AiSaturn, sesli mesaj kaydedip gönderebilmek için mikrofon erişimi ister.',
         NSAppleMusicUsageDescription:
           'This app does not use Apple Music, but a system API may require this permission.',
         UIBackgroundModes: ['fetch', 'remote-notification'],
